@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box</title>
+    <style>
+        .box {
+            background-color: aquamarine;
+            padding: 25px;
+            border: 2px solid steelblue;
+            border-radius: 10px;
+            margin: 300px 300px 100px 300px; /* Center the box */
+            text-align: center;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            width: 500px;
+            box-sizing: border-box;
+        }
+
+        .song {
+            width: 500px; /* Match box width */
+            text-align: center; /* Center iframe */
+            margin: 10px auto 0  300px; /* Position below box */
+        }
+
+        iframe {
+            width: 300px;
+            height: 80px;
+            border: none;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto; /* Center the iframe */
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="box">Hi, this is the box</h3>
+
+    <div class="song">
+        <iframe src="https://open.spotify.com/embed/track/0nbXyq5TXYPCO7pr3N8S4I?utm_source=generator"
+            allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+    </div>
+
+</body>
+
+</html>
