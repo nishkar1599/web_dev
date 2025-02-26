@@ -1,0 +1,9 @@
+div p:first-child {
+    color: red; /* Unique color for the first paragraph */
+    background-color: yellow;
+}
+
+div p:not(:first-child) {
+    color: white; /* Same color for the rest */
+    background-color: blue;
+}
