@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-bottom: 20px;
+        }
+
+        .man {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            border-radius: 30px 30px 0 0;
+            object-fit: cover;
+        }
+
+        span {
+            display: inline-block;
+            border: 1px solid gray;
+            width: auto;
+            padding: 5px 10px;
+            border-radius: 10px;
+            text-align: center;
+            color: gray;
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        .tags {
+            padding-left: 15px;
+        }
+
+        h1 {
+            padding-left: 15px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .text {
+            padding: 0 15px;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .read {
+            border: 1px solid gray;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 30px;
+            margin: 15px auto;
+            color: blue;
+            background-color: skyblue;
+            font-family: sans-serif;
+            display: block;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .read:hover {
+            background-color: deepskyblue;
+        }
+
+        /* Responsive Adjustments */
+        @media (min-width: 600px) {
+            .container {
+                max-width: 500px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .text {
+                font-size: 16px;
+            }
+            .read {
+                width: 120px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="man" src="img.png" alt="">
+        <div class="tags">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <h1>Lago Di Braies</h1>
+        <div class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas impedit tempore ea minus quam possimus
+            ducimus deleniti, odit reiciendis vel, magnam voluptatibus magni.
+        </div>
+        <div class="read">Read More</div>
+    </div>
+</body>
+
+</html>
