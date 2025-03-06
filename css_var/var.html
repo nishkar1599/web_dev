@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_var</title>
+    <style>
+        :root{
+            --main-color: rgb(136, 253, 253);
+            --second-color: rgb(253, 136, 136);
+            --tertiary-color: rgb(136, 253, 136);
+            --display: flex;
+            --defpadding:20px;
+            --secpadding:100px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: var(--main-color);
+            padding: var(--defpadding);
+            display: var(--display);
+            color: var(--second-color);
+        }
+        nav ul{
+            display: var(--display);
+            list-style-type: none;
+            ;
+        }
+        nav ul li{
+            padding: var(--defpadding);
+            background-color: var(--second-color);
+            margin: 10vw;
+            border-radius: 10px; 
+        }
+
+    </style>
+</head>
+<body>
+    <nav >
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
